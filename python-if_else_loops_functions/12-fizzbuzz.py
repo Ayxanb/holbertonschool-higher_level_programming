@@ -11,4 +11,4 @@ def fizzbuzz():
         else:
             s = str(i)
 
-        print(s, end=' ' if != 99 else '\n')
+        print(s, end=' ' if i != 99 else '\n')
