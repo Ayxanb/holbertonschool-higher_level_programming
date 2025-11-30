@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 print(
     ('{}' * 26).format(
         *(
