@@ -8,7 +8,7 @@ if __name__ == "__main__":
         exit(1)
 
     a = int(sys.argv[1])
-    op = sys.argv[2]
+    op = sys.argv[2])
     b = int(sys.argv[3])
 
     if op == "+":
