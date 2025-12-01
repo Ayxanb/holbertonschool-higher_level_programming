@@ -12,16 +12,18 @@ if __name__ == "__main__":
     op = sys.argv[2]
     b = int(sys.argv[3])
 
+    star = chr(42)  # generates "*"
+
     if op == "+":
         result = add(a, b)
     elif op == "-":
         result = sub(a, b)
-    elif op == "*":
+    elif op == star:
         result = mul(a, b)
     elif op == "/":
         result = div(a, b)
     else:
-        print("Unknown operator. Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, {}, /".format(star))
         exit(1)
 
     print("{} {} {} = {}".format(a, op, b, result))
