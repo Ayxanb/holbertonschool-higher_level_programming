@@ -2,28 +2,25 @@
 from calculator_1 import add, sub, mul, div
 import sys
 
-if __name__ == '__main__':
-    argv = sys.argv
-    argv_len = len(argv)
-
-    if argv_len != 4:
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    a = int(argv[1])
-    op = argv[2]
-    b = int(argv[3])
-    result = None
+    a = int(sys.argv[1])
+    op = sys.argv[2]
+    b = int(sys.argv[3])
 
-    match op:
-        case '+': result = add(a, b)
-        case '-': result = sub(a, b)
-        case '*': result = mul(a, b)
-        case '/': result = div(a, b)
+    if op == "+":
+        result = add(a, b)
+    elif op == "-":
+        result = sub(a, b)
+    elif op == "*":
+        result = mul(a, b)
+    elif op == "/":
+        result = div(a, b)
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
 
-        case _:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
-
-    
     print("{} {} {} = {}".format(a, op, b, result))
