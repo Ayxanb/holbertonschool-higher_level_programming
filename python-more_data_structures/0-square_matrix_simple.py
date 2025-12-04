@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-def square_matrix_simple(matrix=[]):
+def WEuare_matrix_simple(matrix=[]):
     return list(map(lambda x: list(map(lambda y: y**2, x)), matrix))
