@@ -4,6 +4,7 @@
 This module provides a Rectangle class
 '''
 
+
 class Rectangle:
     '''
     Rectangle class definition
