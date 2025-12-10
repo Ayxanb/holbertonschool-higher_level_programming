@@ -115,7 +115,7 @@ class Rectangle:
         result = ''
 
         for i in range(self.__width):
-            for i in range(self.__height):
+            for j in range(self.__height):
                 result += '#'
             result += '\n'
         return result
