@@ -1,31 +1,10 @@
-MyList.print_sorted tests
-=========================
+#!/usr/bin/python3
+"""Defines a class MyList that inherits from list."""
 
-Make sure MyList inherits from list and prints a sorted version
-without modifying the original list.
 
->>> from my_list import MyList
+class MyList(list):
+    """Custom list class that can print itself sorted."""
 
-# Basic sorting
->>> my_list = MyList([3, 1, 2])
->>> my_list.print_sorted()
-[1, 2, 3]
-
-# Original list should remain unchanged
->>> my_list
-[3, 1, 2]
-
-# Sorting with duplicates
->>> my_list2 = MyList([5, 1, 5, 3])
->>> my_list2.print_sorted()
-[1, 3, 5, 5]
-
-# Empty list behavior
->>> empty = MyList()
->>> empty.print_sorted()
-[]
-
-# Negative numbers
->>> nums = MyList([-1, -3, 2])
->>> nums.print_sorted()
-[-3, -1, 2]
+    def print_sorted(self):
+        """Prints the list in ascending sorted order."""
+        print(sorted(self))
