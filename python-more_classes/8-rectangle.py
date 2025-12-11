@@ -47,7 +47,8 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
 
-    def bigger_or_equal(self, rect_1, rect_2):
+    @classmethod
+    def bigger_or_equal(rect_1, rect_2):
         if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
 
