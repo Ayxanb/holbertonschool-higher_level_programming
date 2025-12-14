@@ -5,7 +5,7 @@
 import json
 
 
-def load_from__json_file(filename):
+def load_from_json_file(filename):
     ''' I hate docstring '''
 
     with open(filename) as f:
