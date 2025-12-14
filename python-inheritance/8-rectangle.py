@@ -8,8 +8,8 @@ class Rectangle(BaseGeometry):
     ''' I hate writing docstr '''
     def __init__(self, width, height):
         ''' I hate writing docstr '''
-        integer_validator('width', width)
-        integer_validator('height', height)
+        self.integer_validator('width', width)
+        self.integer_validator('height', height)
 
         self.__width = width
         self.__height = height
