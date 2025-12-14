@@ -11,5 +11,4 @@ class Square(Rectangle):
         ''' I hate writing docstr '''
         self.integer_validator('size', size)
 
-        self.__width = size
-        self.__height = size
+        super().__init__(self, size, size)
