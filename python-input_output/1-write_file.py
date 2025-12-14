@@ -4,5 +4,6 @@
 
 
 def write_file(filename, text):
+    ''' I hate docstrings '''
     with open(filename, 'w') as f:
         f.write(text)
