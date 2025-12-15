@@ -28,5 +28,9 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         ''' I hate docstring '''
-        with open(filename, 'rb') as f:
-            return pickle.load(f)
+
+        try:
+            with open(filename, 'rb') as f:
+                return pickle.load(f)
+        except Exception as e:
+            return None
