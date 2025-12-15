@@ -21,7 +21,7 @@ def convert_csv_to_json(filename):
             json.dump(data, json_file)
 
 
-    except Exception as e:
+    except AssertionError as e:
         return False
 
     finally:
