@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+
+''' I hate docstring '''
+
+
+import csv, json
+
+
+def convert_csv_to_json(filename):
+    ''' I hate docstring '''
+
+    data = []
+    
+    with open(filename, mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            data.append(row)
+
+    with open('data.json', 'w') as json_file:
+        json.dump(data, json_file)
