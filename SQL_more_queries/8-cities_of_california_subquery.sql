@@ -1,3 +1,4 @@
+-- this is a comment
 SELECT cities.id, cities.name, cities.state_id
 FROM cities, states
 WHERE cities.state_id = states.id
