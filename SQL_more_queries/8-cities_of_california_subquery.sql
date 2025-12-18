@@ -1,5 +1,5 @@
 -- this is a comment
-SELECT cities.id, cities.name, cities.state_id
+SELECT cities.id, cities.name
 FROM cities, states
 WHERE cities.state_id = states.id
   AND states.name = 'California'
